@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<%= params[:format] %>
+<%= params.inspect %>
+
+<%= link_to "User List", users_path %>
+
 <%= yield %>
 
 </body>

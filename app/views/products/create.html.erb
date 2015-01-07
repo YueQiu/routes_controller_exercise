@@ -1,0 +1,18 @@
+<h2>Create Product</h2>
+
+<%= params[:product].inspect %>
+<!-- 
+<% product = Product.create(params[:product]) %>
+</br>
+<%= product.errors.inspect %>
+
+<!-- Same As -->
+
+<% product = Product.new(params[:product]) %>
+<%= product.save %> 
+
+<% if product.save %>
+	<h2>Congrats. You created a new product</h2>
+<% else %>
+	<h2>Sorry. Choose another name</h2>
+<% end %>
