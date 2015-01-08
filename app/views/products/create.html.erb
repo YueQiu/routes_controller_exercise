@@ -1,18 +1,15 @@
 <h2>Create Product</h2>
 
-<%= params[:product].inspect %>
+
+
+<h2>Product is successfully created</h2>
+
+<%= @product.name %> is added to the website. It costs $<%= @product.price %>.
+
+
+<!-- Same As -->
+
 <!-- 
 <% product = Product.create(params[:product]) %>
 </br>
 <%= product.errors.inspect %>
-
-<!-- Same As -->
-
-<% product = Product.new(params[:product]) %>
-<%= product.save %> 
-
-<% if product.save %>
-	<h2>Congrats. You created a new product</h2>
-<% else %>
-	<h2>Sorry. Choose another name</h2>
-<% end %>

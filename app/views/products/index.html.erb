@@ -9,12 +9,10 @@ Product name: <%= first_product.name %>. Price: <%=first_product.price %>
 Seller: <%= first_product.user.name %>
 </p>
 
-<% allProducts = Product.includes(:user).all %>
 <ul>
-	<% allProducts.each do |product| %>
+	<% @products.each do |product| %>
 		<li>
 			Product: <%= product.name %>
-			Seller: <%= product.user.name %>
 		</li>
 	<% end %>	
 </ul>

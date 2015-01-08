@@ -1,11 +1,14 @@
 <h2>New Product View</h2>
 
-<form method = 'post' action = '/products'>
+<!-- <form method = 'post' action = '/products'>
 	<label>Name</label></br>
 	<input name = "product[name]" size = "30" type= "text">
 	</br>
 	<input name = "product[price]" size = "30" type= "text">
 	</br>
 	<input type = "submit" value = "Create Product">
-</form>
+</form> -->
 <!-- when we submit this form it will submit to the /products path using a method of post.  -->
+
+<%= render :partial => 'form' %>
+
