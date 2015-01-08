@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
@@ -43,3 +44,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'activerecord', '3.2.6'
+
+
